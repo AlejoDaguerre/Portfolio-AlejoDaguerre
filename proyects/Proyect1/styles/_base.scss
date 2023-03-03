@@ -1,0 +1,45 @@
+$fuente-tipica: Arial,sans-serif, Helvetica;
+$color-fondo: #212121;
+$color-letra-1: #6d6868;
+$color-letra-2: #ffffff;
+$color-secundario: #b71c1c;
+
+/*Fuentes*/
+@font-face{
+    font-family: "GROBOLD";
+    src: url('../fonts/GROBOLD/GROBOLD.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;     
+
+}
+
+/*Generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: $color-fondo;
+}
+
+#cuerpo{
+    display: block;
+    width: 1170px;
+    min-height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
