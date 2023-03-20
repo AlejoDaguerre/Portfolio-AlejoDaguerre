@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.headerContent{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.headerContent header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.headerContent header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color:  #ffc200;
+    text-decoration: none;
+}
+.headerContent header ul{
+    display: flex;
+    list-style: none;
+}
+.headerContent header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.headerContent header nav ul li a:hover{
+    color: #ffc200;
+}
+
+
+.nav-responsive{
+    background-color: #ffc200;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.intro{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.intro .bannerContent{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.intro .bannerContent img{
+    margin-top: 40px;
+    border: 10px solid #ffc200;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+
+
+.intro .bannerContent h1{
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: 'Righteous';
+}
+.intro .bannerContent h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.intro .bannerContent .linkedin a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.intro .bannerContent .linkedin a:hover{
+    background-color: #ffc200;
+}
+.aboutMe{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.aboutMe .bio{
+    max-width: 1100px;
+    margin: auto;
+}
+.aboutMe h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.aboutMe .bio p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.aboutMe .bio p span{
+    color: #ffc200;
+    font-weight: bold;
+}
+.aboutMe .perData{
+    display: flex;
+}
+.aboutMe .perData .col
+{
+    width: 50%;
+}
+.aboutMe .perData .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.aboutMe .perData .col ul{
+    list-style: none;
+}
+.aboutMe .perData .col ul li{
+    margin: 12px 0;
+}
+.aboutMe .perData .col ul li strong{
+    display: inline-block;
+    color: #ffc200;
+    width: 130px;
+}
+.aboutMe .perData .col ul li span{
+    background-color: #ffc200;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contentSection{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .pillar{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .pillar .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .pillar .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .pillar .left{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .pillar .right{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .pillar .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .pillar .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .pillar .item .teacher{
+    color: #ffc200;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .pillar .item .company{
+    display: block;
+    color: #ffc200;
+    margin-bottom: 10px;
+}
+.curriculum .pillar .item p{
+    line-height: 24px;
+}
+.curriculum .pillar .lf{
+    border-right: 2px solid #ffc200;
+    margin-right: 20px;
+}
+.curriculum .pillar .rg{
+    border-left: 2px solid #ffc200;
+    margin-left: 20px;
+}
+
+.curriculum li{
+    list-style: none;
+}
+
+.curriculum .pillar .item .l-connector{
+    height: 2px;
+    background-color: #ffc200;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .pillar .item .l-connector .l-circle{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffc200;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .pillar .item .r-connector{
+    height: 2px;
+    background-color: #ffc200;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .pillar .item .r-connector .r-circle{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffc200;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contentSection{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio .gallery .project{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.portfolio .gallery .project img{
+    width: 100%;
+    display: block;
+}
+.portfolio .gallery .project .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(255, 238, 0, 0.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .gallery .project .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .gallery .project .overlay:hover{
+    opacity: 1;
+}
+.portfolio .gallery .project .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+.contact{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    background-size: 50%;
+    background-position-y: 25%;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contentSection{
+    width: 50%;
+    margin: auto;
+}
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.info{
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .linkedin{
+    margin-bottom: 20px;
+}
+footer .linkedin a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.linkedin a:hover{
+    background-color: #ffc200;
+}
+
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffc200;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+        
+    }
+}
+@media screen and (max-width:700px){
+    .aboutMe .pillar{
+        display: block;
+    }
+    .aboutMe .pillar .col{
+        width: fit-content;
+    }
+
+    .curriculum .pillar{
+        display: block;
+    }
+    .curriculum .pillar .col{
+        width: 90%;
+    }
+    .curriculum .pillar .right{
+        margin-left: 20px;
+    }
+
+    .portfolio .gallery{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .gallery .project{
+        max-width: 100%;
+    }
+    .portfolio .gallery .project img{
+        width: 100%;
+    }
+    .contact .pillar{
+        display: block;
+    }
+    .contact .pillar .col{
+        width: 100%;
+    }
+}
